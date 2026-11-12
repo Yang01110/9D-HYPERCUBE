@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9D Hypercube | Red Neon</title>
+
+    <!-- FIX: Three.js import map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+    <div class="panel">
+        <h1>9D HYPERCUBE</h1>
+        <div class="subtitle">MULTIDIMENSIONAL PROJECTION</div>
+
+        <div class="stat">DIMENSIONS <span>9D</span></div>
+        <div class="stat">VERTICES <span>512</span></div>
+        <div class="stat">EDGES <span>2304</span></div>
+        <div class="stat">RENDER ENGINE <span>WEBGL</span></div>
+        <div class="control">
+            <label>ROTATION SPEED</label>
+            <input id="speed" type="range" min="0" max="3" step="0.05" value="0.65">
+        </div>
+        <div class="control">
+            <label>BALL SIZE</label>
+            <input id="ballSize" type="range" min="0.02" max="0.12" step="0.005" value="0.055">
+        </div>
+        <div class="control">
+            <label>GLOW INTENSITY</label>
+            <input id="glow" type="range" min="0" max="3" step="0.1" value="1.5">
+        </div>
+        <div class="buttons">
+            <button id="pause">PAUSE</button>
+            <button id="reset">RESET</button>
+        </div>
+        <div class="buttons">
+            <button id="fullscreen">FULLSCREEN</button>
+        </div>
+    </div>
+    <div class="footer">
+        9 DIMENSIONS • 3D PROJECTION • NEON SYSTEM
+    </div>
+</body>
+</html>
